@@ -37,7 +37,12 @@ def main():
     except KeyboardInterrupt:
         # print(whisper_result)
         print("Transcribing")
-        result = model.transcribe(tmp_filename, language="pl")
+        # result = model.transcribe(tmp_filename, language="pl")
+        audio = whisper.load_audio(tmp_filename)
+        audio = whisper.pad_or_trim(audio)
+        mel = whisper.log_mel_spectrogram(audio).to(model.device)
+        options = whisper.DecodingOptions(language="pl")
+        result = whisper.decode(model, mel, options)
         # result = model.transcribe(tmp_filename)
         print("Done transcribing")
         print(result)
