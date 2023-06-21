@@ -26,7 +26,6 @@ class AudioFile:
         self.sound_file.close()
             
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument("--version", action="version", version="0.0.1")
 parser.add_argument("--filename", "-f", default="recording.wav", 
