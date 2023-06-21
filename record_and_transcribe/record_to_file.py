@@ -6,7 +6,7 @@ import soundfile as sf
 from tqdm import tqdm
 
 
-class AudioFile:
+class AudioFileWriteCallback:
     def __init__(self, filename, samplerate, channels) -> None:
         self.sound_file = sf.SoundFile(filename, mode='w', 
                                        samplerate=samplerate,
@@ -42,7 +42,9 @@ parser.add_argument("--blocksize", "-b", type=int, required=False, default=0,
 args = parser.parse_args()
 
 
-audio_file_callback = AudioFile(args.filename, args.samplerate, args.channels)
+audio_file_callback = AudioFileWriteCallback(args.filename, 
+                                             args.samplerate, 
+                                             args.channels)
 
 print(f"Recording to file: {args.filename}")
 with sd.InputStream(samplerate=args.samplerate,
