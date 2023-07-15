@@ -69,6 +69,7 @@ else:
     processing = True
     print(f"Reading: {filename}")
     while processing:
+        print("-" * 100)
         data = f.read(args.blocksize, 
                       dtype=np.float32)
         if not len(data):
@@ -78,7 +79,9 @@ else:
             result = model.transcribe(data, language="pl")
             now = time.time()
             processing_time = now - then
-            print(result.get("text", ""))
+            for segment in result.get("segments", []):
+                print(segment.get("text", ""))
+                print(f"Average logprob: {segment.get('avg_logprob', '')}")
             print(f"Processing block of size {args.blocksize} "
                   f"took: {processing_time} seconds.")
     f.close()
