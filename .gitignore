@@ -1,3 +1,5 @@
 record_and_transcribe/recording.wav
 .vscode/launch.json
 record_and_transcribe/rousseau.wav
+docs/*.drawio
+docs/*.drawio.*

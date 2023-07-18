@@ -18,6 +18,8 @@ In essence, this solution represents a significant leap forward in interactive t
 
 ## 2. System Architecture
 
+![general system architecture diagram](system_architecture_general_chart.jpg "General System Architecture Diagram")
+
 This application's architecture is designed with a singular focus on individual user experiences. While the potential for a multi-user application exists, the current design does not incorporate scalability considerations. The system comprises distinct frontend and backend applications, both hosted on the same server.
 
 The frontend application, implemented as a web application, facilitates direct communication with the backend server. It handles user input, transmits it to the backend, and presents the server-generated results to the user. Additionally, the frontend serves as a configuration hub, enabling users to personalize the system. This includes uploading a chosen image for avatar animation and adjusting settings related to various stages of the process. Configuration options are divided into basic and advanced categories, catering to different levels of user expertise and ensuring the system's accessibility and flexibility.
