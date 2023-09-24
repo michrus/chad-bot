@@ -22,7 +22,7 @@ This document is a starting point for everyone who needs to understand the most 
 
 ## 2.1. Problem Statement
 
-
+Currently, popular AI-powered chatbots are confined to solely text-based communication. However, various open-source AI models allow today for easily performing text transcription, voice synthesis and image animation. Put together those technologies allow for enhancing chatbot interaction by delivering two-way voice interaction and animated avatar. This project aims to provide a single solution that integrate those technologies providing easy-to-use and user friendly interactive chatbot with audio-visual interface.
 
 ## 2.2. Functional Requirements
 
