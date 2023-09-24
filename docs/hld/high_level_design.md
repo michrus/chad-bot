@@ -1,10 +1,12 @@
 # High Level Design
 
+## 1. Introduction
+
+### 1.1. Objective
+
 This document, known as the High-Level Design (HLD), serves as a general guide to the overall architecture and design of a system. It provides an overview of the system's components, their interactions, and the technologies used. The HLD includes details about system architecture, data design, interface design, and security considerations. It is intended to provide a clear, broad view of the system's design, serving as a roadmap for developers and stakeholders throughout the development process.
 
-## 1. General Description
-
-This solution introduces an advanced, interactive chatbot, designed to engage in conversation through a voice-activated interface that handles both input and output. The chatbot is embodied in a dynamic, animated avatar, which is lip-synced to mirror the bot's vocal responses, creating a more immersive and engaging user experience.
+The objective of this project is to deliver a foundational MVP solution providing an advanced, interactive chatbot, designed to engage in conversation through a voice-activated interface that handles both input and output. The chatbot is embodied in a dynamic, animated avatar, which is lip-synced to mirror the bot's vocal responses, creating a more immersive and engaging user experience.
 
 The system is underpinned by a suite of specialized Artificial Intelligence models, each dedicated to a unique aspect of its comprehensive functionality. This includes a voice-to-text transcription model that accurately converts user speech into text, a conversational engine powered by a state-of-the-art Large Language Model that generates intelligent and contextually relevant responses, a text-to-voice synthesis model that vocalizes the chatbot's responses in a natural and human-like manner, and an avatar animation model that automatically syncs the avatar's lip movements with the system's audio output.
 
@@ -15,6 +17,14 @@ Designed with flexibility in mind, this system can be run locally on a user's ma
 Key assumptions made during the design process include a steady and reliable internet connection for users opting for the cloud-based operation, and a high level of digital literacy among the target user base. Potential risks, such as data privacy breaches and system downtime, have been identified and addressed through robust security measures and a reliable system architecture.
 
 In essence, this solution represents a significant leap forward in interactive technology, offering users a unique, engaging, and human-like way to interact with digital platforms, beyond the confines of traditional text-based communication. The project is a testament to the power of combining various freely available, cutting-edge technologies in artificial intelligence. The exercise of integrating these diverse AI models into a cohesive, functional system is a goal in itself, demonstrating the potential of AI when harnessed in innovative and synergistic ways.
+
+### 1.2. Scope
+
+The High Level Design document covers a broad and general description of the solution, its component parts and their interactions. It will cover system architecture, providing a high-level diagram, description of data flows, general description of individual components and their role in the whole solution, and list any dependencies - wether hardware, software or on external systems
+
+### 1.3. Target Audience
+
+This document is a starting point for everyone who needs to understand the most important components of the solution and how those individual parts interact with each other. Considering the nature of the project this document will be of use mostly to **developers** and **architects**, as a reference point during work on more detailed low-level design and implementation. 
 
 ## 2. System Architecture
 
