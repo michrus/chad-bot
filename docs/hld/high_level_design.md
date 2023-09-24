@@ -26,6 +26,33 @@ Currently, popular AI-powered chatbots are confined to solely text-based communi
 
 ## 2.2. Functional Requirements
 
+1. Voice-to-Text Transcription:
+    
+    * Convert user speech into accurate text.
+    * Recognize and handle various accents and dialects for broader accessibility.
+
+2. Conversational Engine:
+    
+    * Allow integration with various available chatbot engines (weather open-source or not).
+    * Send transcribed texts to the integrated system and obtain the responses.
+
+3. Text-to-Voice Synthesis:
+
+    * Convert chatbot's text responses into audible speech.
+    * Produce human-like vocal outputs that are clear and natural.
+    * Offer different voice profiles to cater to diverse user preferences.
+
+4. Avatar Animation:
+
+    * Display an avatar that visually represents the system.
+    * Synchronize the avatar's lip movements seamlessly with the system's audio output.
+    * Provide a range of avatar designs to cater to different user tastes.
+
+5. Operational Modes:
+
+    * Local Mode: Allow the system to run on a user's local machine with features that may have limited real-time responses.
+    * Cloud Mode: Enable deployment on cloud resources for optimal performance, with an expectation of reliable internet connectivity.
+
 ## 2.3. Technical Requirements
 
 ## 3. System Architecture
